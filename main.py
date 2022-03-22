@@ -6,7 +6,6 @@ import requests
 req_url = "https://chunithm.sega.jp/storage/json/music.json"
 img_baseurl = "https://new.chunithm-net.com/chuni-mobile/html/mobile/img/"
 
-# jacketpath = "~/apps/chunijacket/"
 jacketpath = "./"
 
 data = requests.get(req_url).json()
