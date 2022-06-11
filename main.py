@@ -24,6 +24,8 @@ for music in choiced:
         url = img_baseurl + music["image"]
         title = music["title"]
         artist = music["artist"]
+        if title == "Scythe of Death":
+            artist = "Masahiro “Godspeed” Aoki"
         rawfilename = title + artist
         filepath = jacketpath + "jackets/" + f"{hashlib.md5(rawfilename.encode('utf-8')).hexdigest()}.png"
         if not os.path.isfile(filepath):
